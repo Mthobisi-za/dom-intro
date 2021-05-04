@@ -21,13 +21,13 @@ function textBillTotal(){
         smsTotall += 0.75;
     }
     var callsTotalElem = document.querySelector(".callTotalOne");
-    var smsTotalElem = document.querySelector(".smsTotalOne");
+    var smsTotalElems = document.querySelector(".smsTotalOnes");
     var totalCostElem = document.querySelector(".totalOne");
     //update the totals that is displayed on the screen.
     callsTotalElem.innerHTML = callsTotal.toFixed(2);
     console.log(callsTotalElem)
-    smsTotalElem.innerHTML = smsTotall.toFixed(2);
-    console.log(smsTotalElem)
+    smsTotalElems.innerHTML = smsTotall.toFixed(2);
+    console.log(smsTotalElems)
     var totalCost = callsTotal + smsTotal;
     totalCostElem.innerHTML = totalCost.toFixed(2);
     console.log(totalCostElem)
