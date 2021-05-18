@@ -12,7 +12,6 @@ function textBillTotal(){
     var bill = document.querySelector(".billTypeText").value;
     // get the value entered in the billType textfield
     var billTypeEntered = bill.trim();
-    console.log(billTypeEntered)
     // update the correct total
     if (billTypeEntered === "call"){
         callsTotal += 2.75
